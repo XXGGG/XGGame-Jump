@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bpe57cndls2m0"]
+
+[sub_resource type="Environment" id="Environment_sgp6g"]
+background_mode = 1
+background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sgp6g"]
+
+[node name="Main" type="Node3D" unique_id=2114403142]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1123848294]
+environment = SubResource("Environment_sgp6g")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=334147588]
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2279414]
+transform = Transform3D(0.65878123, -0.34283906, 0.6696781, -6.930258e-08, 0.8901333, 0.45570028, -0.75233465, -0.30020684, 0.586403, 13.15515, 10.643996, 11.501674)
+projection = 1
+size = 6.055
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=510635795]
+mesh = SubResource("BoxMesh_sgp6g")

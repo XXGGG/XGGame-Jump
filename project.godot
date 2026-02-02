@@ -11,8 +11,15 @@ config_version=5
 [application]
 
 config/name="XGGame-Jump"
+run/main_scene="uid://bpe57cndls2m0"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=720
+window/size/viewport_height=1280
+window/stretch/mode="canvas_items"
 
 [physics]
 
